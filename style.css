@@ -1,0 +1,144 @@
+/* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container styling */
+.container {
+    
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px auto;
+    background-color: #005475;
+    padding: 30px;
+    border-radius: 10px;
+   
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Details styling */
+.details {
+    margin-bottom: 20px;
+}
+
+/* Title styling */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Fields styling */
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Input field styling */
+.input-field {
+    width: 30%;
+    padding: 20px;
+    
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+/* Input styling */
+input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #0c2b3d;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+/* Buttons styling */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Submit button styling */
+.sumbit {
+   display :flex ;
+   align-items :center ;
+   background-color :#ffffff ; /* Changed the background color to blue */
+   border :none ;
+   border-radius :5 px ;
+   padding :10 px 20 px ;
+   cursor :pointer ;
+   transition :all .3 s ; /* Added transition for smooth effect */
+}
+
+/* Submit button hover effect */ /* Added hover effect for submit button */
+.sumbit:hover {
+   transform :scale (1.1) ; /* Increased the size of the button on hover */
+   box-shadow :0 px 0 px 10 px rgba (0 ,0 ,0 ,.1) ; /* Added a subtle shadow on hover */
+}
+
+/* Submit button text styling */
+.sumbit .btnText {
+   font-size :16 px ;
+   color :#000000 ;
+   margin-right :10 px ;
+}
+
+/* Submit button icon styling */
+.sumbit i {
+   font-size :20 px ;
+   color : #08546b ;
+}
+
+/* nav bar */
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    height: 60px;
+}
+
+/* Navigation link styling */
+nav a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Navigation link hover effect */
+nav a:hover {
+    background-color: #007bff;
+}
+
+.input-field select{
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/* Media query for smaller screens */ /* Added media query to make the form responsive */
+@media screen and (max-width:600px) {
+
+/* Input field styling for smaller screens */ /* Changed the width of the input fields to 100% for smaller screens */
+.input-field {
+width :100% ;
+}
+}

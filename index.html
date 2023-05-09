@@ -1,0 +1,253 @@
+<!-- REGISTRATION FORM -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!----===== Iconscout CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <title>Responsive Registration Form</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Personal Details</a>
+      <a href="index2.html">Educational Qualification</a>
+      <a href="index3.html">Upload Documents</a>
+    </nav>
+
+    <div class="container">
+      <form action="#" id="studentForm1">
+        <!-- ------------------------------------------------------------------------------------------------------------- -->
+        <!-- FIRST PAGE -->
+        <div class="form first">
+          <!-- PERSONAL DETAILS -->
+          <div class="details personal">
+            <span class="title">Personal Details</span>
+            <div class="fields">
+              <div class="input-field">
+                <label>First Name</label>
+                <input name="fname" type="text" placeholder="Enter first name" required />
+              </div>
+
+              <div class="input-field">
+                <label>Middle Name</label>
+                <input name="mname" type="text" placeholder="Enter middle name" />
+              </div>
+
+              <div class="input-field">
+                <label>Last Name</label>
+                <input name= "lname" type="text" placeholder="Enter last name" required />
+              </div>
+
+              <div class="input-field">
+                <label>Date of Birth</label>
+                <input name="dob" type="date" placeholder="Enter birth date" required />
+              </div>
+
+              <div class="input-field">
+                <label>Email</label>
+                <input name="email" type="text" placeholder="Enter your email" required />
+              </div>
+
+              <div class="input-field">
+                <label>Country Code</label>
+                <input name="ccode"
+                  type="number"
+                  placeholder="Enter country code"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Mobile Number</label>
+                 <input type="number" id="phone" name="mob" required pattern="[0-9]{10}" placeholder="Please enter a valid phone number" required>
+              </div>
+
+              <div class="input-field">
+                <label>Alternate Mobile Number</label>
+                <input type="number" id="phone" name="alt" required pattern="[0-9]{10}" placeholder="Please enter a valid phone number"> 
+              </div>
+
+              <div class="input-field">
+                <label>Gender</label>
+                <select required>
+                  <option disabled selected>Select gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Others</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- ADDRESS DETAILS -->
+
+         <div class="details address">
+            <span class="title">Address Details</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label>Address type</label>
+                <select required>
+                  <option disabled selected>Select type</option>
+                  <option>Permanent</option>
+                  <option>Temporary</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label>Nationality</label>
+                <input name= "nat" type="text" placeholder="Enter nationality" />
+              </div>
+
+              <div class="input-field">
+                <label>State</label>
+                <input name="state" type="text" placeholder="Enter state" required />
+              </div>
+
+              <div class="input-field">
+                <label>Address</label>
+                <input name="address" type="text" placeholder="Enter address" required />
+              </div>
+
+              <div class="input-field">
+                <label>Landmark</label>
+                <input name="land" type="text" placeholder="Enter landmark" required />
+              </div>
+
+              <div class="input-field">
+                <label>Pin code</label>
+                <input name="pin" type="number" placeholder="Enter pin code" required />
+              </div>
+            </div>
+          </div> 
+        
+          <!-- FAMILY DETAILS -->
+
+           <div class="details family">
+            <span class="title">Family Details</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label>Father's First Name</label>
+                <input name="ffname" type="text" placeholder="Enter first name" required />
+              </div>
+
+              <div class="input-field">
+                <label>Father's Last Name</label>
+                <input name="flname" type="text" placeholder="Enter last name" required />
+              </div>
+
+              <div class="input-field">
+                <label>Father's Occupation</label>
+                <input name="focc" type="text" placeholder="Enter occupation" required />
+              </div>
+
+              <div class="input-field">
+                <label>Mother's First Name</label>
+                <input name="mfname" type="text" placeholder="Enter first name" required />
+              </div>
+
+              <div class="input-field">
+                <label>Mother's Last Name</label>
+                <input name="mlname" type="text" placeholder="Enter last name" required />
+              </div>
+
+              <div class="input-field">
+                <label>Mother's Occupation</label>
+                <input name="mocc" type="text" placeholder="Enter occupation" required />
+              </div>
+
+              <div class="input-field">
+                <label>Country Code</label>
+                <input name="cocode"
+                  type="number"
+                  placeholder="Enter country code"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Mobile Number</label>
+                <input type="number" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Please enter a valid phone number"  required> 
+              </div>
+
+              <div class="input-field">
+                <label>Alternate Mobile Number</label>
+                <input type="number" id="phone" name="altmob" required pattern="[0-9]{10}" placeholder="Please enter a valid phone number"> 
+              </div>
+            </div>
+          </div> 
+
+          <!-- IDENTITY DETAILS -->
+
+           <div class="details ID">
+            <span class="title">Identity Details</span>
+            <div class="fields">
+              <div class="input-field">
+                <label>ID Type</label>
+                <select required>
+                  <option disabled selected>Select ID</option>
+                  <option>Aadhar</option>
+                  <option>Pan Card</option>
+                  <option>Driving License</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label>ID Number</label>
+                <input name="id" type="number" placeholder="Enter ID number" required />
+              </div>
+
+              <div class="input-field">
+                <label>Confirm ID Number</label>
+                <input name="id" type="cid" placeholder="Enter ID number" required />
+              </div>
+
+              <div class="input-field">
+                <label>Issued Authority</label>
+                <input name="auth"
+                  type="text"
+                  placeholder="Enter issued authority"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label>Issued Date</label>
+                <input name="issdate" type="date" placeholder="Enter your issued date" required/>
+              </div>
+
+              <div class="input-field">
+                <label>Expiry Date</label>
+                <input name="expdate" type="date" placeholder="Enter expiry date" required />
+              </div>
+
+            </div> 
+
+            <!-- NEXT BUTTON -->
+
+            <button id="nextBtn1" class="nextBtn">
+              <span class="btnText">Next</span>
+              <i class="uil uil-navigator"></i>
+            </button>
+          </div> 
+        </div>
+
+        <a href="index.html"></a>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
